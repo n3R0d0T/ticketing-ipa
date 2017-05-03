@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteRule ^registration-closed$ 1.php [L]
+RewriteRule ^social-accounts$ 2.php [L]
+RewriteRule ^order-details-day-1$ 3.php [L]
+RewriteRule ^order-details-day-2$ 4.php [L]
+RewriteRule ^reminder$ 5.php [L]
+RewriteRule ^registration-complete$ 6.php [L]
+RewriteRule ^terms$ terms.php [L]
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+deny from 66.196.118.0/24
+deny from 98.138.112.0/24
